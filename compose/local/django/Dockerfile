@@ -12,7 +12,7 @@ RUN apt-get update \
     # Translation dependencies
     && apt-get install -y gettext \
     # Additional dependencies
-    && apt-get install -y procps \
+    && apt-get install -y procps telnet \
     # cleaning up unused files
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
     && rm -rf /var/lib/apt/lists/*
